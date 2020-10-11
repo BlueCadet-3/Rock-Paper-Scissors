@@ -1,0 +1,131 @@
+/* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --bg-one: #252a34;
+  --bg-two: #252a3417;
+  --bg-three: #eaeaea;
+  --text-one: #08d9d6;
+  --text-two: #ff2e63;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: Roboto, apple-system, sans-serif;
+}
+
+body {
+  background: var(--bg-one)
+}
+
+header {
+  background-color: var(--bg-one);
+  color: var(--text-one);
+  font-size: 3vw;
+  text-align: center;
+  height: fit-content;
+  padding: 3%;
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 40%;
+  height: 40%;
+  margin: 2%;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-two);
+  font-size: 2vw;
+  font-style: italic;
+  padding: 4%;
+  width:100%;
+  height:auto;
+  position: relative;
+}
+
+/* Class and ID styles */
+
+.scoreboard {
+  background-color: var(--bg-three);
+  text-align: center;
+  min-height: auto;
+  font-size: 4vw;
+  font-weight: 600;
+  padding: 2%;
+}
+
+#user-label {
+  color: var(--bg-one);
+  position: absolute;
+  display: block;
+  height: 100%;
+  left: 10%;
+}
+
+#cpu-label {
+  color: var(--bg-one);
+  position: absolute;
+  display: block;
+  height: max-content;
+  right: 10%;
+}
+
+#user-score {
+  position: relative;
+  left: 15%;
+  font-weight: 600;
+}
+
+#cpu-score {
+  position: relative;
+  right: 15%;
+  font-weight: 600;
+}
+
+.result {
+  background-color: var(--bg-two);
+  color: var(--text-two);
+  font-size: 2.5vw;
+  text-align: center;
+  height: fit-content;
+  padding: 1%;
+}
+
+.choices {
+  background: var(--bg-three);
+  display: inline-flex;
+  vertical-align: auto;
+  height: auto;
+  max-height: fit-content;
+  width: 100%;
+  padding: 4%;
+}
+
+.choice {
+  float: left;
+  vertical-align: auto;
+  width: 100%;
+  height: 100%;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: var(--text-one);
+  padding: 3%;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: var(--text-two);
+}
+
+
+
+
