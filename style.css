@@ -4,7 +4,7 @@
 
 :root {
   --bg-one: #252a34;
-  --bg-two: #252a3417;
+  --bg-two: #252734;
   --bg-three: #eaeaea;
   --text-one: #08d9d6;
   --text-two: #ff2e63;
@@ -41,12 +41,13 @@ img {
 }
 
 footer {
+  background-color: var(--bg-one);
   text-align: center;
   color: var(--text-two);
   font-size: 2vw;
   font-style: italic;
-  padding: 4%;
   width:100%;
+  padding: 8% 0;
   height:auto;
   position: relative;
 }
@@ -102,11 +103,8 @@ footer {
 .choices {
   background-color: var(--bg-three);
   display: inline-flex;
-  vertical-align: auto;
-  height: auto;
-  max-height: fit-content;
   width: 100%;
-  padding: 4%;
+  padding: 4% 0;
 }
 
 .choice {
