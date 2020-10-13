@@ -18,7 +18,7 @@
 }
 
 body {
-  background: var(--bg-one)
+  background-color;: var(--bg-one)
 }
 
 header {
@@ -100,7 +100,7 @@ footer {
 }
 
 .choices {
-  background: var(--bg-three);
+  background-color: var(--bg-three);
   display: inline-flex;
   vertical-align: auto;
   height: auto;
@@ -122,10 +122,6 @@ footer {
 }
 
 .choice:hover {
-  cursor: pointer;
   background-color: var(--text-two);
+  cursor: pointer;
 }
-
-
-
-

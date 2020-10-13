@@ -65,7 +65,6 @@ function cpuChooses(cpuChoice){
 function win() {
   user.Score++;
   userScore_span.innerHTML = user.Score;
-  result_section.innerHTML = "You win!";
 }
 
 function lose() {
@@ -73,45 +72,44 @@ function lose() {
   cpuScore_span.innerHTML = cpu.Score;
 }
 
-
-/* User chooses rock */
+  /* User chooses rock */
 
 function compareChoices() {
   if (user.currentChoice === choices[0] && cpu.currentChoice === choices[0]) {
-    console.log("Draw!");
+    result_section.innerHTML = "Draw!";
   } else if (user.currentChoice === choices[0] && cpu.currentChoice === choices[1]) {
     lose(),
-    console.log(user.currentChoice + " gets covered by " + choices[1] + "...you lose!");
+    result_section.innerHTML = user.currentChoice + " gets covered by " + choices[1] + "...you lose!";
   } else if (user.currentChoice === choices[0] && cpu.currentChoice === choices[2]) {
     win(),
-    console.log(user.currentChoice + " smashes " + choices[2] + "...you win!");
+    result_section.innerHTML = user.currentChoice + " smashes " + choices[2] + "...you win!";
   }
   
-    /* User chooses paper */
+  /* User chooses paper */
   
   if (user.currentChoice === choices[1] && cpu.currentChoice === choices[0]) {
     win(),
-    console.log(user.currentChoice + " is covered by " + cpu.currentChoice + "...you win!");
+    result_section.innerHTML = user.currentChoice + " is covered by " + cpu.currentChoice + "...you win!";
   } else if (user.currentChoice === choices[1] && cpu.currentChoice === choices[1]) {
-    console.log("Draw!");
+    result_section.innerHTML = "Draw!";
   } else if (user.currentChoice === choices[1] && cpu.currentChoice === choices[2]) {
     lose(),
-    console.log(user.currentChoice + " gets cut by " + cpu.currentChoice + "...you lose!");
+    result_section.innerHTML = user.currentChoice + " gets cut by " + cpu.currentChoice + "...you lose!";
   }
   
     /* User chooses scissors */ 
   
   if (user.currentChoice === choices[2] && cpu.currentChoice === choices[0]) {
     lose(),
-    console.log(user.currentChoice + " get smashed by " + cpu.currentChoice + "...you lose!");
+    result_section.innerHTML = user.currentChoice + " get smashed by " + cpu.currentChoice + "...you lose!";
   } else if (user.currentChoice === choices[2] && cpu.currentChoice === choices[1]) {
     win(),
-    console.log(user.currentChoice + " cuts " + cpu.currentChoice + "...you win!");
+    result_section.innerHTML = user.currentChoice + " cuts " + cpu.currentChoice + "...you win!";
   } else if (user.currentChoice === choices[2] && cpu.currentChoice === choices[2]) {
-    console.log("Draw!");
+    result_section.innerHTML = "Draw!";
   }
 }
 
-/* Outputs */
+/* Run */
 
 selection();
